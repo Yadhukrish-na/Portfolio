@@ -1,0 +1,153 @@
+
+.find-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 5rem 2rem;
+    color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+    max-width: 100vh;
+    min-width: 100vh;
+  }
+
+  .find-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: 
+      linear-gradient(rgba(123, 44, 191, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(123, 44, 191, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 0;
+  }
+  
+  .find-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .find-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #e0aaff;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .find-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #9d4edd, #7b2cbf);
+    border-radius: 3px;
+  }
+  
+  .find-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: #d3d3d3;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .find-info {
+    background: rgba(26, 26, 46, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(157, 78, 221, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .find-info p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #f3e5ff;
+  }
+  
+  .find-info strong {
+    color: #9d4edd;
+    font-weight: 600;
+  }
+  
+  .find-socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .find-socials a {
+    padding: 0.8rem 2rem;
+    background: linear-gradient(135deg, #7b2cbf 0%, #9d4edd 100%);
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .find-socials a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(157, 78, 221, 0.6);
+  }
+  
+  .find-socials a::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  @media (max-width: 768px) {
+    .find-section {
+      padding: 3rem 1.5rem;
+    }
+    
+    .find-heading {
+      font-size: 2rem;
+    }
+    
+    .find-description {
+      font-size: 1rem;
+    }
+    
+    .find-info {
+      padding: 1.5rem;
+    }
+    
+    .find-socials {
+      gap: 1rem;
+    }
+    
+    .find-socials a {
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .find-info {
+    animation: float 6s ease-in-out infinite;
+  }
