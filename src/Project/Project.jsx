@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.css';
-// import img2 from '../Images/NeoVita.png';
+import img1 from '../Images/Fitseeker.jpg';
+import img2 from '../Images/NeoVita.png';
 
 function Projects() {
   const projects = [
@@ -8,13 +9,13 @@ function Projects() {
       title: 'Fitseeker',
       description: 'A web application built with Php.FitSeeker is a web platform connecting users with qualified trainers in dance, music, and related fields. It allows users to search, select, and rate trainers, and purchase musical instruments and training equipment.',
       link: '#',
-      image: 'https://via.placeholder.com/400x300.png?text=Project+One',
+      image: img1
     },
     {
       title: 'NeoVita',
       description: 'A web application built with React and Node.js.NeoVita is a web app that supports expectant mothers and newborns, offering features like doctor appointment management, personalized fitness guidance, healthcare resources, and vaccination schedule tracking to promote a healthier future for both.',
       link: '#',
-      image: '../../Images/NeoVita.png',
+      image: img2
     },
  
   ];

@@ -5,7 +5,6 @@ import './Home.css';
 import Contact from '../Contact/Contact';
 import Projects from '../Project/Project';
 import { motion } from 'framer-motion';
-import Findme from '../FindMe/Findme';
 
 function Home() {
   const scrollToSection = (sectionId) => {
